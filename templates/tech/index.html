@@ -3,6 +3,20 @@
 
 {% block content %}
 
-    <p>olá</p>
+    <header>
+        <img src="{% static 'assets/oauth-logo.png' %}" alt="Uma pessoa feliz no computador" class="logo">
+    </header>
+
+    <main>
+        <h1>Autenticação com OAuth 2.0</h1>
+        <div class="social-media">
+            <div class="social-media-details">
+                <a href="">
+                    <img src="{% static 'assets/github.svg' %}" alt="Ícone para realizar a autenticação com GitHub" class="social-media-icon">
+                    <p>GitHub</p>
+                </a>
+            </div>
+        </div>
+    </main>
 
 {% endblock %}
