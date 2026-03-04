@@ -31,6 +31,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# Definindo o caminho da aplicação / Qual é o registro dela
+
+SITE_ID = 1 # Como é um ambiente de desenvolvimento colocamos como '1'
+
+    # Colocamos o domínio da aplicação para que o(s) provedor(es) reconheça(am) nossa aplicação quando requisitarmos
+    # o token através do allauth. 
 
 # Application definition
 
@@ -149,9 +155,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
+            'client_id': (str(os.getenv('client_id'))),
+            'secret': (str(os.getenv('secret'))),
+            'key': '' # variável vazia
         }
     }
 }
