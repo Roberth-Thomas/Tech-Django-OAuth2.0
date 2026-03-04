@@ -1,0 +1,19 @@
+{% extends 'tech/base.html' %}
+{% load static %} 
+
+{% block content %}
+
+    <header>
+        <img src="{% static 'assets/oauth-logo-GreenCheck.png' %}" alt="oauth logo GreenCheck" class="logo">
+    </header>
+
+    <main>
+        <h1>Autenticação com OAuth 2.0</h1>
+        <p>Login Realizado com sucesso !</p>
+
+        <div class="logout-btn-container">
+                <a href="http://localhost:8000/accounts/logout" class="logout-btn">Logout</a>
+        </div>
+    </main>
+
+{% endblock %}

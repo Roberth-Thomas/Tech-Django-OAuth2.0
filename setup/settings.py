@@ -155,9 +155,19 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': (str(os.getenv('client_id'))),
-            'secret': (str(os.getenv('secret'))),
-            'key': '' # variável vazia
+            'client_id': (str(os.getenv('CLIENT_ID'))),
+            'secret': (str(os.getenv('SECRET'))),
+            'key': (str(os.getenv('KEY')))
         }
     }
 }
+
+LOGIN_REDIRECT_URL = '/members'     # Após o Login me manda para a tela de membros, mas com uma tela intermediária,
+                                    # todas as vezes ao logar
+
+SOCIALACCOUNT_LOGIN_ON_GET = True   # Evita de visualizarmos a tela intermediária ao logar
+
+ACCOUNT_LOGOUT_ON_GET = True        # Evita de vizualizarmos a tela intermediária ao fazermos logout
+
+LOGOUT_REDIRECT_URL = '/'           # Página que a aplicação envia após o retorno
+
