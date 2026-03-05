@@ -35,4 +35,10 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 
 ---
 
+## ⚙️ Extras fora da grade do curso:
+
+* Configuração de variáveis de ambiente (.env)
+* Modularização de HTML e CSS (Partials)
+* Documentação detalhada do processo de construção
+
 <p align="center">Desenvolvido por Roberth Thomás</p>
