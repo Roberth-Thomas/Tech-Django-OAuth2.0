@@ -1,4 +1,4 @@
-# 🛡️ Autenticação com OAuth 2.0 (GitHub)
+# 🛡️ Autenticação com OAuth 2.0 (GitHub / Google)
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
 
