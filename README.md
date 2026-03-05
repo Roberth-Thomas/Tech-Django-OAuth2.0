@@ -2,7 +2,7 @@
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
 
-Este projeto demonstra a implementação de um sistema de login seguro utilizando o protocolo **OAuth 2.0**. A aplicação permite que usuários se autentiquem de forma simplificada através de suas contas do GitHub, garantindo que as credenciais do usuário sejam tratadas diretamente pelo provedor.
+Este projeto demonstra a implementação de um sistema de login seguro utilizando o protocolo **OAuth 2.0**. A aplicação permite que usuários se autentiquem de forma simplificada através de suas contas do GitHub e Google, garantindo que as credenciais do usuário sejam tratadas diretamente pelo provedor.
 
 ---
 
@@ -14,7 +14,7 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 
 | Tela de Login | Autenticação Confirmada |
 |---|---|
-| <img width="400" alt="image" src="https://github.com/user-attachments/assets/07ffb80c-219a-499e-a717-ffa7bc3cc1fe" /> | <img width="400" alt="image" src="https://github.com/user-attachments/assets/4ffd972a-830e-4d3d-9d32-c0932e7f49bd" /> |
+| <img width="400"  alt="image" src="https://github.com/user-attachments/assets/0b4c7862-ed19-43f0-99f5-7625a92fba5b" /> | <img width="400" alt="image" src="https://github.com/user-attachments/assets/4ffd972a-830e-4d3d-9d32-c0932e7f49bd" /> |
 
 ---
 
@@ -40,5 +40,6 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 * Configuração de variáveis de ambiente (.env)
 * Modularização de HTML e CSS (Partials)
 * Documentação detalhada do processo de construção
+* Implementação de login com o Google
 
 <p align="center">Desenvolvido por Roberth Thomás</p>
