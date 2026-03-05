@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
 
     'allauth.socialaccount.providers.github',
+    'allauth.socialaccount.providers.google',
 
     # Applications
     'tech',
@@ -157,8 +158,23 @@ SOCIALACCOUNT_PROVIDERS = {
         'APP': {
             'client_id': (str(os.getenv('CLIENT_ID'))),
             'secret': (str(os.getenv('SECRET'))),
-            'key': (str(os.getenv('KEY')))
+            'key': (str(os.getenv('KEY'))),
         }
+    }, # adicionar uma vírgula sempre que precisar inserir um novo provedor
+    'google': {
+        'APP': {
+            'client_id': (str(os.getenv('CLIENT_ID_GOOGLE'))),
+            'secret': (str(os.getenv('SECRET_GOOGLE'))),
+            'key': (str(os.getenv('KEY_GOOGLE'))),
+        },
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        },
+        'OAUTH_PKCE_ENABLED': True,
     }
 }
 

@@ -49,32 +49,43 @@ p {
 
 .social-media {
     display: flex;
+    flex-direction: row; /* Garante que fiquem lado a lado */
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: -3.5rem;
-    gap: 5rem;
+    align-items: flex-start; /* Alinha os itens pelo topo */
+    gap: 3rem;            /* Espaço entre GitHub e Google */
+    margin-top: 2rem;     /* Ajuste conforme necessário em vez de valores negativos */
 }
 
 .social-media-details {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Ícone em cima, texto embaixo */
     align-items: center;
-    flex-direction: column;
 }
 
 .social-media-icon {
     height: 5rem;
     width: 5rem;
-    margin-top: 5rem;
+    margin-top: 0; /* Removi o margin exagerado para evitar quebras */
 }
 
-.social-media-details a p {
-    color: var(--offwhite);
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+.social-media-details a {
+    display: inline-flex;    /* Faz o link envolver apenas o conteúdo */
+    flex-direction: column;  /* Coloca o ícone sobre o texto */
+    align-items: center;     /* Centraliza horizontalmente */
+    text-decoration: none;   /* Remove o sublinhado padrão */
+    color: inherit;          /* Mantém a cor do texto */
+}
+
+.social-media-details p {
+    margin: 0;               /* REMOVE a altura extra vinda das margens */
+    margin-top: 8px;        /* Espaço controlado entre o ícone e o texto */
+    font-family: 'Prompt', sans-serif;
+}
+
+/* Garante que o container pai não force o estiramento */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;               /* Espaço entre GitHub e Google */
+    align-items: flex-start;
 }
