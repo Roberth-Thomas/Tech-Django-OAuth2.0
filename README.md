@@ -21,7 +21,7 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 ## 🚀 Tecnologias Utilizadas
 
 * **Backend**: Python.
-* **Frontend**: HTML5, CSS3 e JavaScript.
+* **Frontend**: HTML5, CSS e JavaScript.
 * **Protocolo**: OAuth 2.0.
 * **Provedor**: GitHub API.
 
