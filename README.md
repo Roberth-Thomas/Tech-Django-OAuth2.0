@@ -23,7 +23,7 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 * **Backend**: Python.
 * **Frontend**: HTML5, CSS e JavaScript.
 * **Protocolo**: OAuth 2.0.
-* **Provedor**: GitHub API.
+* **Provedor**: GitHub e Google API.
 
 ---
 
