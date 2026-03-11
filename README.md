@@ -18,6 +18,11 @@ O sistema foi desenvolvido para ilustrar o fluxo de autorização externa. Ao cl
 
 ---
 
+Vídeo Demonstrativo
+https://youtu.be/CU1Z_yvh-yc
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 * **Backend**: Python.
